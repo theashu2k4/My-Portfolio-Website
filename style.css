@@ -1,0 +1,289 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    scroll-behavior: smooth;
+    color:white;
+    body {
+  margin: 0;
+  height: 100vh;
+  /* This creates multiple glowing spots at different positions */
+  background-color: #020617; /* Dark base */
+  background-image: 
+    radial-gradient(at 20% 30%, hsla(210, 100%, 20%, 0.5) 0px, transparent 50%),
+    radial-gradient(at 80% 70%, hsla(200, 100%, 15%, 0.4) 0px, transparent 50%),
+    radial-gradient(at 50% 50%, hsla(220, 100%, 10%, 0.3) 0px, transparent 50%);
+  background-attachment: fixed;
+}
+}
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+body {
+    padding-top: 80px;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    z-index: 1000;
+    padding:15px 0px;
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    background:#ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-around; /*to make all three Center*/
+    align-items: center; /*to make all three middle in the navbar vertically*/
+}
+.navbar{
+    display: flex;
+}
+
+li{
+    margin:10px;
+    display: inline;
+}
+.logo{
+    font-size: 27px;
+    font-weight: 700;
+}
+.logo span{
+    color:black;
+    font-family:'Times New Roman', Times, serif
+}
+.home-section{
+    height:700px;
+    width:100%;
+    /* background-color: #000000; */
+}
+.home-container{
+    height:100%;
+    width:66%;
+    margin:0 auto;
+    display: flex; 
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+
+}
+.home-content{
+    /* background-color: #000000; */
+    width:100%;
+    height:70%;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.home-scroll{
+    height:4%;
+    background-color: white;
+    width:20%;
+    color: black;
+    text-align: center;
+}
+.home-social{
+    width:5%;
+    height:80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.home-social i{
+    scale: 200%;
+}
+.home-main{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    gap: 10px;
+}
+.home-main h2{
+    text-align: center;
+    font-size: 2.8rem;
+}
+.home-main p{
+    font-size: 1rem;
+    text-align: justify;
+    line-height: 180%;
+}
+
+.say-Hello{
+    min-height:45px;
+    width:50%;
+    background-color: white;
+    color: black;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 8px;
+}
+.home-picture{
+    background-image: url("my-Photo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 35%; 
+    height: 80%;
+    border-radius: 15px;
+}
+.about-section{
+    /* background-color: rgb(0, 0, 20); */
+    width:100%;
+    height:500px;
+    padding:3% 10% 0% 10%;
+    text-align: center;
+}
+.about-description{
+    margin-top: 2%;
+    width:100%;
+    font-size: 1.4rem;
+    text-align: left;
+}
+.about-span{
+    color:#ffffff;
+    margin-top: 0%;
+}
+#about-resume{
+    width: 30%;
+    min-width: 200px;
+    height: auto;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 15px;
+    margin: 20px auto;
+    box-sizing: border-box;
+    background-color: #0D1117;
+    border: 1px solid rgba(48, 54, 61, 1);
+    box-shadow: #30363d40 -18px -17px 100px -10px, #010409 30px 40px 60px -30px, #f0f6fc1a 0 2px 6px inset;
+}
+a.my-resume {
+    display:block;
+    color:rgb(255, 255, 255);
+
+}
+/* Update the section background for the dark theme */
+.skills {
+    background: radial-gradient(circle at center, #0a2342, #02050a);
+    padding: 5%;
+    color: white;
+    text-align: center;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.skills-mainbox {
+    margin-top:50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    max-width: 1500px;
+}
+.skills h4{
+    margin-bottom:30px;
+}
+.skills-box {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 30px;
+    flex: 1;                 
+    min-width: 300px;        /* Minimum width before they wrap */
+    max-width: 380px;        /* Maximum width to maintain the look */
+    height: auto;            /* Changed from fixed 460px to grow with content */
+    min-height: 460px;
+    transition: 0.3s;
+}
+
+/* Layout for the skill info (Logo + Name + % Number) */
+.skill-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.skill-name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.skill-name img {
+    width: 25px;
+    height: 25px;
+}
+
+.percentage {
+    font-size: 0.85rem;
+    color: #8892b0;
+}
+
+/* The Progress Bar Container */
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #007bff, #00d4ff, #007bff);
+    background-size: 200% 100%;
+    border-radius: 10px;
+    transition: width 1s ease-in-out;
+    animation: gradientMove 2s linear infinite;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 100% 0%; }
+    100% { background-position: -100% 0%; }
+}
+.qualification{
+    padding: 1% 19% 1% 20%;
+    width:auto;
+    min-height: 500px;
+    text-align: center;
+    gap:10px;
+    /* background-color: #300000; */
+}
+.education-box{
+    padding:10px;
+    margin-top:15px;
+    background-color: #e0e0e0;
+    color:black;
+    min-height:400px;
+    width:auto;
+}
+.education-tab{
+    background-color: #000000;
+    color:white;
+    font-size: 1.3rem;
+    min-height:20px;
+    width:auto;
+    margin-bottom:15px;
+}
+.education-section{
+    background-color: #ff0000;
+    min-height:400px;
+    width:auto;
+}
